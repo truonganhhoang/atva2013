@@ -1,0 +1,179 @@
+CALL FOR PAPERS
+ATVA 2013
+11th International Symposium on Automated Technology for 
+Verification and Analysis
+
+October 15 - 18, 2013, Hanoi, Vietnam
+http://uet.vnu.edu.vn/atva2013/
+====================
+
+The ATVA series of symposia is intended to promote research in
+theoretical and practical aspects of automated analysis, verification
+and synthesis in Asia by providing a forum for interaction between the
+regional and international research communities and industry in the
+field. The previous editions of the symposium were held in Taiwan,
+Beijing, Tokyo, Seoul, Macao, Singapore, Taipei and
+Thiruvananthapuram. Organised by the University of Engineering and
+Technology – VNU Hanoi, ATVA 2013 will be held in the campus of
+Vietnam National University, Hanoi from October 15th to October 18th,
+2013.  
+
+SCOPE 
+
+ATVA 2013 solicits high quality submissions in areas
+related to the theory and practice of automated analysis and
+verification of hardware and software systems. Topics of interest
+include, but are not limited to: 
+
+- Formalisms for modeling hardware, software and embedded systems 
+- Specification and verification of finite-state, infinite-state and
+  parameterized system 
+- Program analysis and software verification 
+- Analysis and verification of hardware circuits, systems-on-chip and
+  embedded systems 
+- Analysis of real-time, hybrid, priced/weighted and probabilistic
+  systems 
+- Deductive, algorithmic, compositional and abstraction/refinement
+techniques for analysis and verification 
+- Analytical techniques for safety, security, and dependability 
+- Testing and runtime analysis based on verification technology 
+- Analysis and verification of parallel and concurrent
+  hardware/software systems  
+- Verification in industrial practice 
+- Applications and case studies
+
+Theory papers should preferably be motivated by practical problems,
+and applications should be based on sound theory and should solve
+problems of practical interest.
+
+SUBMISSION 
+
+Submissions are invited in two categories: regular research papers and
+tool papers. Submitted papers must present original and unpublished
+work, and must not be concurrently submitted to any other conference
+or journal.
+
+Regular paper submissions are restricted to 15 pages in Springer's
+LNCS format, and tool paper submissions are restricted to 4 pages in
+the same format. Proofs and details omitted due to space constraints
+may be put in an appendix. Any such additional material will be read
+by reviewers/program committee members at their discretion. Authors
+are therefore urged to include details necessary for evaluation of the
+technical merit of their work within the prescribed page limits.
+
+Tool papers must include information about a URL from where the tool
+can be downloaded or accessed on-line for evaluation. The URL must
+also contain a set of examples, and a user's manual that describes
+usage of the tool through examples. In case the tool needs to be
+downloaded and installed, the URL must also contain a document clearly
+giving instructions for installation of the tool on
+Linux/Windows/MacOS.
+
+Authors must upload PDF files of their papers through EasyChair at:
+
+https://www.easychair.org/conferences/?conf=atva2013 
+
+Accepted papers in both categories will be published by Springer as a
+LNCS volume. At least one author of each accepted paper must also
+register for the conference and present the paper.
+
+KEYNOTE TALKS aND TUTORIALS
+
+Keynote talks and tutorials will be given by:
+
+   - Alessandro Cimatti (ITC-IRST, Italy)
+   - Marta Kiwakowska (Oxford, UK)
+   - Jerome Leroux (Bordeaux, France)
+
+IMPORTANT DATES
+
+   - April 06, 2013: Paper submission deadline
+   - Jun 1, 2013: Paper acceptance/rejection notification
+   - July 5, 2013: Camera-ready copy deadline
+   - October 15 - 18, 2013: Main conference & Tutorials
+
+ORGANIZING COMMITTEES
+
+General Chair
+
+   - Nguyen Ngoc Binh (UET-VNU Hanoi, Vietnam)
+
+Steering Committee
+
+   - E. Allen Emerson (U. of Texas-Austin, USA)
+   - Teruo Higashino (Osaka Univeristy, Japan)
+   - Insup Lee (U. of Pennsylvania, USA)
+   - Doron Peled (Bar Ilan University, Israel)
+   - Farn Wang (National Taiwan University, Taiwan)
+   - Hsu-Chun Yen (National Taiwan University, Taiwan)
+
+Programme Committee Co-Chairs
+
+   - Hung Dang-Van (UET-VNU Hanoi, Vietnam)
+   - Mizuhito Ogawa (JAIST, Japan)
+
+Publicity Chair
+
+   - Thao Dang (Verimag, France)
+
+Finance/Registration Chair
+
+   - Thanh-Tho Quan (HCMUT, Vietnam)
+
+Local Chair
+
+   - Hoang Truong (UET-VNU Hanoi, Vietnam)
+
+PROGRAMME COMMITTEE
+
+   - Christel Baier (Germany)
+   - Jonathan Billington (Australia)
+   - Gianpiero Cabodi (Italy)
+   - Supratik Chakraborty (India)
+   - Wei-Ngan Chin (Singapore)
+   - Thao Dang (France)
+   - Hung Dang-Van (Vietnam, Co-chair)
+   - Deepak D'Souza (India)
+   - E.Allen Emerson (USA)
+   - Martin Fränzle (Germany)
+   - Masahiro Fujita (Japan)
+   - Susanne Graf (France)
+   - Teruo Higashino (Japan)
+   - Alan Hu (Canada)
+   - Franjo Ivancic (USA)
+   - Jie-Hong Roland Jiang (Taiwan)
+   - Joost-Pieter Katoen (Germany)
+   - Zurab Khasidashvili (Israel)
+   - Moonzoo Kim (Korea)
+   - Gerwin Klein (Australia)
+   - Fribourg Laurent (France)
+   - Insup Lee (USA)
+   - Xuandong Li (China) 
+   - Annabelle McIver (Australia)
+   - Madhavan Mukund (India)
+   - Pham Ngoc-Hung (Vietnam)
+   - Thanh-Binh Nguyen (Vietnam)
+   - Viet-Ha Nguyen (Vietnam)
+   - Mizuhito Ogawa (Japan, Co-chair)
+   - Doron Peled (Israel)
+   - Thanh-Tho Quan (Vietnam)
+   - Venkatesh R (India)
+   - Ganesan Ramalingam (India)
+   - Abhik Roychoudhury (Singapore)
+   - Hiroyuki Seki (Japan)
+   - Martin Steffen (Norway)
+   - Sofiene Tahar (Canada)
+   - Hoang Truong (Vietnam)
+   - Mahesh Viswanathan (USA)
+   - Farn Wang (Taiwan)
+   - Bow-Yaw Wang (Taiwan)
+   - Ji Wang (China)
+   - Hsu-Chun Yen (Taiwan)
+   - Wang Yi (Sweden)
+   - Shoji Yuen (Japan)
+   - Wenhui Zhang (China)  
+
+CONFERENCE VENUE
+
+Historical Campus, Vietnam National University, 19 Le Thanh Tong
+street, Hoan Kiem district, Hanoi, Vietnam.
