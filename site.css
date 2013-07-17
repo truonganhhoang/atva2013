@@ -69,3 +69,31 @@ h4 {
     left:0px;
 }
 
+
+.accordion-inner p {
+    /*font-size: .9em;*/
+    line-height: 1.25em;
+}
+
+.table-header{
+    /*background-color: #ff8007;*/
+    background-color:#ffcc99;
+    text-align: center;
+}
+
+.row1{
+    /*background-color:#ffcc99;*/
+}
+
+.row2{
+    background-color: #daf5f3;
+}
+
+#programme-div p {
+    margin: 0;
+}
+
+#programme-div p em{
+    color: green;
+}
+
