@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ATVA 2013 Accepted Papers</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Le styles -->
+    <!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css"
+          rel="stylesheet"/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet"/>
+    <link href="site.css" rel="stylesheet"/>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+<div id="top">
+    <h1><a href="index.html">ATVA 2013</a></h1>
+
+    <p>11th International Symposium on Automated Technology for Verification and Analysis</p>
+
+    <p><strong>October 15 - 18, 2013, Hanoi, Vietnam</strong></p>
+
+</div>
+
+
+<div class="row-fluid">
+<div class="span3">
+    <div id="menu">
+        <h4>General <i class="icon-info-sign"></i></h4>
+        <ul class="nav nav-list">
+            <li><a href="index.html#">About</a></li>
+            <li><a href="index.html#cfp">Call for Papers/Workshops</a></li>
+            <li><a href="index.html#date">Important Dates</a></li>
+            <li><a href="index.html#keynote">Invited Speakers</a></li>
+            <li><a href="index.html#workshops">Workshops</a></li>
+            <li><a href="index.html#venue">Venue</a></li>
+            <li><a href="index.html#committees">Committees</a></li>
+            <li><a href="index.html#sponsors">Sponsors</a></li>
+            <!--<li><a href="#date">Local</a></li>-->
+            <!--<li><a href="accepted.html">Accepted Papers</a></li>-->
+        </ul>
+
+        <h4>Programme <i class="icon-calendar"></i></h4>
+        <ul class="nav nav-list">
+            <li><a href="programme.html#keynotes">Keynotes and Tutorials</a></li>
+            <li><a href="programme.html#programme">Programme</a></li>
+            <li><a href="programme.html#accepted">Accepted Papers</a></li>
+        </ul>
+
+        <h4>Participation <i class="icon-plane"></i></h4>
+        <ul class="nav nav-list">
+            <li><a href="participation.html#registration">Registration</a></li>
+            <li><a href="participation.html#visa">Visa, Accommodation, Local Info.</a></li>
+            <li><a href="participation.html#contact">Contact</a></li>
+        </ul>
+
+        <h4>Tourist Infomation<i class="icon-picture"></i></h4>
+        <ul class="nav nav-list">
+                    <li><a href="tourism.html#hanoi">Hanoi Attractions and Nearby Tours</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="span9">
+<div>
+
+<h2 id="keynotes">Keynotes and Tutorials</h2>
+
+<h3>Invited talks</h3>
+
+<div style="padding-left: 2em;">
+    <div class="accordion" id="accordion1">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                    Alessandro Cimatti (FBK, Italy): SMT-based Software Model Checking: Explicit Scheduler, Symbolic Threads
+                    <!--<h4><a href="http://es.fbk.eu/people/cimatti/"></a></h4>-->
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <p>In many practical application domains, the software is organized into
+                        a set of threads, whose activation is exclusive and controlled by a
+                        cooperative scheduling policy: threads execute, without any
+                        interruption, until they either terminate or yield the control
+                        explicitly to the scheduler.
+                    </p>
+
+                    <p>
+                        The formal verification of such software poses significant
+                        challenges. On the one side, each thread may have infinite state
+                        space, that might require some abstraction. On the other side, the
+                        scheduling policy is often important for correctness, and an approach
+                        based on abstracting the scheduler may result in loss of precision and
+                        false positives. Unfortunately, the translation of the problem into a
+                        purely sequential software model checking problem turns out to be
+                        highly inefficient for the available technologies.
+                    </p>
+
+                    <p>
+                        We discuss a software model checking technique that exploits the
+                        intrinsic structure of these programs. Each thread is translated into
+                        a separate sequential program and explored symbolically with lazy
+                        abstraction, while the overall verification is orchestrated by the
+                        direct execution of the scheduler. The approach is optimized by
+                        filtering the exploration of the scheduler with the integration of
+                        partial-order reduction. The technique, called ESST (Explicit
+                        Scheduler, Symbolic Threads) has been implemented and experimentally
+                        evaluated on a significant set of benchmarks. The results demonstrate
+                        that ESST technique is way more effective than software model checking
+                        applied to the sequentialized programs, and that partial-order
+                        reduction can lead to further performance improvements.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                    Marta Kwiatkowska (Oxford, UK): Automated Verification and Strategy Synthesis for Probabilistic
+                    Systems
+                    <!--<h4><a href="http://www.cs.ox.ac.uk/marta.kwiatkowska/">Marta Kwiatkowska (Oxford, UK)</a></h4>-->
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <p>Probabilistic model checking is an automated technique to verify whether a probabilistic system,
+                        e.g. a distributed network protocol which can exhibit failures, satisfies a temporal logic
+                        property,
+                        for example, the minimum probability of the network recovering from a fault in a given time
+                        period
+                        is above 0.98. One can also generate, given a model and a temporal property, a strategy for
+                        controlling the system in order to achieve or optimise the property, but this aspect has
+                        received
+                        less attention to date. In this paper, we give an overview of methods for automated verification
+                        and
+                        strategy synthesis, focusing on Markov decision process models and temporal logics PCTL and LTL.
+                        We
+                        also describe how to apply multi-objective model checking to investigate trade-offs between the
+                        properties. We illustrate these techniques by means of several case studies analysed in the
+                        PRISM
+                        model checker. The paper concludes with a summary of future challenges in this area.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                    Jerome Leroux (Bordeaux, France): Acceleration for Petri Nets
+                </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <p>The reachability problem for Petri nets is a central problem of net theory. The problem is known
+                        to
+                        be decidable by inductive invariants definable in the Presburger arithmetic. When the
+                        reachability
+                        set is definable in the Presburger arithmetic, the existence of such an inductive invariant is
+                        immediate. However, in this case, the computation of a Presburger formula denoting the
+                        reachability
+                        set is an open problem. Recently this problem got closed by proving that if the reachability set
+                        of
+                        a Petri net is definable in the Presburger arithmetic, then the Petri net is flatable, i.e. its
+                        reachability set can be obtained by runs labeled by words in a bounded language. As a direct
+                        consequence, classical algorithms based on acceleration techniques effectively compute a formula
+                        in
+                        the Presburger arithmetic denoting the reachability set. In this presentation, the framework of
+                        verification of infinite-state systems based on acceleration techniques is recalled. We also
+                        explain
+                        the completeness of this method on the computation of Presburger formulas denoting the
+                        reachability
+                        sets of Petri nets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Invited tutorials</h3>
+
+<div style="padding-left: 2em;">
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#xcollapseOne">
+                    Alessandro Cimatti (FBK, Italy): SMT-based verification of Hybrid Systems
+                    <!--<h4><a href="http://es.fbk.eu/people/cimatti/"></a></h4>-->
+                </a>
+            </div>
+            <div id="xcollapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <p>Hybrid automata are a widely used framework to model complex critical
+                        systems, where continuous physical dynamics are combined with discrete
+                        transitions. Application areas include automotive, railway, aerospace,
+                        and industrial production. The expressive power of Satisfiability
+                        Modulo Theories (SMT) solvers can be used to symbolically model
+                        networks of hybrid automata, using formulas in the theory of reals.
+                        In this tutorial, we survey the state-of-the-art in SMT-based
+                        verification for hybrid systems. We show how SAT-based techniques
+                        such as bounded model checking, k-induction, predicate abstraction,
+                        and IC3, can be naturally lifted to the SMT case. The expressive power
+                        of the SMT framework allows us to exploit a local time semantics,
+                        where the timescales of the automata in the network are synchronized
+                        upon shared events. The approach fully leverages the advanced features
+                        of modern SMT solvers, such as incrementality, unsatisfiable core
+                        extraction, and interpolation. We then concentrate on the problem of
+                        scenario-based verification, i.e. checking if a network of hybrid
+                        automata accepts some desired interactions among the components,
+                        expressed as Message Sequence Charts (MSCs). We conclude by
+                        investigating the problem of requirements analysis for hybrid systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#xcollapseTwo">
+                    Marta Kwiatkowska (Oxford, UK): Probabilistic model checking with PRISM: overview and recent developments
+                    <!--<h4><a href="http://www.cs.ox.ac.uk/marta.kwiatkowska/">Marta Kwiatkowska (Oxford, UK)</a></h4>-->
+                </a>
+            </div>
+            <div id="xcollapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+					<p>Probabilistic model checking is an automated method for establishing the correctness of probabilistic system models against temporal logic specifications. The techniques have been implemented in the probabilistic model checker PRISM (www.prismmodelchecker.org) and applied to analyse and detect flaws in several real-world systems, across a wide range of application domains. In this tutorial, we give a brief overview of probabilistic model checking, focusing on the model of Markov decision processes, and briefly summarise recent developments of the tool, including parametric models, multi-objective model checking, strategy generation and verification for stochastic games.
+					</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#xcollapseThree">
+                    Jerome Leroux (Bordeaux, France): Reachability Problem for Petri Nets
+                    <!--<h4><a href="http://www.labri.fr/perso/leroux/">Jerome Leroux (Bordeaux, France)</a></h4>-->
+                </a>
+            </div>
+            <div id="xcollapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <p>Systems equipped with counters are central when modeling distributed protocols, programs with
+                        recursive parallel threads, programs with pointers, broadcast protocols, databases, etc.
+                        When it comes to model-checking counter systems and their variants, the main results are
+                        that verification is undecidable when zero-tests are allowed, while several problems can be
+                        decided when zero-tests are forbidden—one speaks of VASS, for "vector addition systems with
+                        states", or equivalently "Petri nets". In the case of Petri net, reachability was shown
+                        decidable in 1982 and the reachability problem for Petri net and related decidable problems
+                        on subclasses of counter systems are pivot problems not only for the verification of
+                        infinite-state systems but also for problems appearing in very active research areas related
+                        to various logics and automata for data words/trees. Hence, the design of efficient
+                        algorithms for the reachability problem for VASS may have a great impact, not only in the
+                        realm of formal verification. It is however a very difficult problem. Therefore, improving
+                        the computational cost for solving the reachability problem for Petri nets would also
+                        improve the complexity of the formal verification of numerous classes of infinite-state
+                        systems.
+                    </p>
+
+
+                    <p>Strikingly, the decision algorithm for Petri net reachability has never been implemented. This
+                        is because of its high complexity, both conceptual (the algorithm is very hard to understand and
+                        to describe) and computational (it is assumed that the complexity of the algorithm is not
+                        primitive-recursive). The general problem is known to be decidable by algorithms exclusively
+                        based on the classical Kosaraju-Lambert-Mayr-Sacerdote-Tenney decomposition (KLMTS
+                        decomposition). Recently from this decomposition, we deduced that a final configuration is not
+                        reachable from an initial one if and only if there exists a Presburger inductive invariant that
+                        contains the initial configuration but not the final one. Since we can decide if a Presburger
+                        formula denotes an inductive invariant, we deduce from this result that there exist checkable
+                        certificates of non-reachability in the Presburger arithmetic. In particular, there exists a
+                        simple algorithm for deciding the general Petri net reachability problem based on two
+                        semi-algorithms. A first one that tries to prove the reachability by enumerating finite
+                        sequences of actions and a second one that tries to prove the non-reachability by enumerating
+                        Presburger formulas. In this presentation we provide a simple proof of the Petri net
+                        reachability problem that is not based on the KLMST decomposition. The proof is based on the
+                        notion of production relations, inspired from Hauschildt, that directly proves the existence of
+                        Presburger inductive invariants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div id="programme-div">
+<h2 id="programme">Programme (tentative)</h2>
+    <table class="table table-condensed table-bordered">
+        <thead>
+        </thead>
+        <tbody>
+		<tr class="table-header" style="background-color: #ffff99;">
+			<td colspan="2" >
+				<p><h3>Day 1: Tuesday, 15
+				October, 2013, Tutorial</h3></p>
+				<p class="pull-right"><b>Tutorial Venue: <a href="http://goo.gl/maps/BtfhJ" style="color: red;">VNU Campus, Building E3, 144
+				Xuan Thuy, Hanoi</span></a></b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > 8:30 - 9:00</p>
+			</td>
+			<td >
+				<p > <b>Registration</b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >9:00 - 10:30</p>
+			</td>
+			<td >
+				<p ><b>Tutorial 1 </b>  SMT-based verification of Hybrid Systems
+</p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >10:30 - 11:00</p>
+			</td>
+			<td >
+				<p ><b>Coffee Break</b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >11:00 - 12:30</p>
+			</td>
+			<td >
+				<p ><b>Tutorial 2</b> Reachability Problem for Petri Nets</p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >12:30 - 14:00</p>
+			</td>
+			<td >
+				<p ><b>Lunch Break</b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >14:00 - 15:30</p>
+			</td>
+			<td >
+				<p ><b>Tutorial 3</b></p>
+			</td>
+		</tr>
+	</tbody>
+    </table><br>
+
+
+	<table class="table table-condensed table-bordered">
+        <thead>
+        </thead>
+		<tbody>
+        <tr class="table-header">
+			<td colspan="2"   >
+				<p><h3>Day 2: Wednesday, 16
+				October, 2013, Theory</h3>
+				</p>
+				<p class="pull-right"><b>Venue: <a href="http://goo.gl/maps/8mZrw">Nguy Nhu Kontum Hall, VNU, 19 Le Thanh
+				Tong, Hanoi</a></b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >8:00 - 8:20</p>
+			</td>
+			<td  >
+				<p ><b>Registration</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p >8:20 - 8:30</p>
+			</td>
+			<td  >
+				<p ><b>Opening</b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >8:30 - 9:30</p>
+			</td>
+			<td  >
+				<p ><b>Keynote: Acceleration For Petri Nets</b></p>
+				<p ><i>Jerome Leroux</i></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p >9:30 - 10:00</p>
+			</td>
+			<td  >
+				<p ><b>Coffee Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td  >
+				<p >10:00 - 12:20</p>
+			</td>
+			<td  >
+				<p ><b>Omega Automata and LTL</b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >Regular</p>
+			</td>
+			<td  >
+				<p >Effective Translation of LTL to Deterministic Rabin
+				Automata: Beyond the (F,G)-Fragment</p>
+				<p ><em>Tommás Babiak, Frantisek Blahoudek, Mojmír
+				Kretínský, and Jan Strejcek</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >Improved upper and lower bounds for Büchi
+				Disambiguation</p>
+				<p ><em>Hrishikesh Karmarkar, Manas Joglekar, and
+				Supratik Chakraborty</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >Tool</p>
+			</td>
+			<td  >
+				<p >Manipulating LTL formulas using Spot 1.0</p>
+				<p ><em>Alexandre Duret-Lutz</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >Rabinizer 2: Small Deterministic Automata for LTL\GU</p>
+				<p ><em>Jan Kretínsky and Ruslán Ledesma Garza</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >LTL Model Checking with Neco</p>
+				<p ><em>Lukasz Fronc and Alexandre Duret-Lutz</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >Solving Parity Games on the GPU</p>
+				<p ><em>Michael Luttenberger and Philipp Hoffmann</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >12:20 - 13:30</p>
+			</td>
+			<td  >
+				<p ><b>Lunch Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td  >
+				<p >13:30 - 15:40</p>
+			</td>
+			<td  >
+				<p ><b>Timed Systems</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p >Regular</p>
+			</td>
+			<td  >
+				<p >Time-Bounded Reachability for Monotonic Hybrid
+				Automata: Complexity and Fixed Points</p>
+				<p ><em>Thomas Brihaye, Laurent Doyen, Gilles
+				Geeraerts, Joel Ouaknine, Jean-Francois Raskin and James Worrell</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >An Automatic Technique for Checking the Simulation
+				of Timed Systems</p>
+				<p ><em>Elie Fares, Jean-Paul Bodeveix, Mamoun
+				Filali-Amine and Manuel Garnacho</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >Synthesis of Bounded Integer Parameters for
+				Parametric Timed Reachability Games</p>
+				<p ><em>Aleksandra Jovanovic, Didier Lime and Olivier
+				H. Roux</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >Tool</p>
+			</td>
+			<td  >
+				<p >PyEcdar: Towards Open Source Implementation for
+				Timed Systems</p>
+				<p ><em>Axel Legay and Louis-Marie Traonouez</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >CCMC: A Conditional CSL Model Checker for
+				Continuous-Time Markov Chains</p>
+				<p ><em>Yang Gao, Ernst Moritz Hahn, Naijun Zhan and
+				Lijun Zhang</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >15:40 - 16:00</p>
+			</td>
+			<td  >
+				<p ><b>Coffee Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td  >
+				<p >16:00 - 17:50</p>
+			</td>
+			<td  >
+				<p ><b>Quantitative Properties</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p >Regular</p>
+			</td>
+			<td  >
+				<p >Kleene Algebras and Semimodules for Energy Problems</p>
+				<p ><em>Zoltan Esik, Uli Fahrenberg, Axel Legay and
+				Karin Quaas</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >Looking at Mean-Payoff and Total-Payoff through
+				Windows</p>
+				<p ><em>Krishnendu Chatterjee, Laurent Doyen, Mickael
+				Randour and Jean-Francois Raskin</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td  >
+				<p > </p>
+			</td>
+			<td  >
+				<p >Weighted Safety</p>
+				<p ><em>Sigal Weiner, Orna Kupferman, Matan Hasson,
+				Eyal Pery and Zohar Shevach</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td  >
+				<p >Tool</p>
+			</td>
+			<td  >
+				<p >NLTOOLBOX: A Library for Reachability Computation
+				of Nonlinear Dynamical Systems</p>
+				<p ><em>Romain Testylier and Thao Dang</em></p>
+			</td>
+		</tr>
+    <tbody>
+	</table><br>
+
+
+	<table class="table table-condensed table-bordered">
+    <thead>
+        </thead>
+    <tbody>
+		<tr class="table-header">
+			<td colspan="2"  >
+				<p><h3>Day 3: Thursday, 17 October, 2013, Software Engineering</h3></p>
+
+				<p class="pull-right"><b>Venue: <a href="http://goo.gl/maps/8mZrw">Nguy Nhu Kontum Hall, VNU, 19 Le Thanh
+				Tong, Hanoi</a></b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >8:30 - 9:30</p>
+			</td>
+			<td >
+				<p ><b>Keynote: Automated Verifcation and Strategy
+				Synthesis for Probabilistic Systems</b></p>
+				<p ><em>Marta Kwiatkowska and David Parker</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >9:30 - 10:00</p>
+			</td>
+			<td >
+				<p ><b>Coffee Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td >
+				<p >10:00 - 12:10</p>
+			</td>
+			<td >
+				<p ><b>Software Verification, Specification and
+				Analysis</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Regular</p>
+			</td>
+			<td >
+				<p >A Framework for Ranking Vacuity Results</p>
+				<p ><em>Shoham Ben-David and Orna Kupferman</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Synthesizing Masking Fault-Tolerant Systems from
+				Deontic Specications</p>
+				<p ><em>Ramiro Demasi, Pablo Castro, Thomas S.E.
+				Maibaum and Nazareno Aguirre</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Verification of a Dynamic Management Protocol for
+				Cloud Applications</p>
+				<p ><em>Rim Abid, Gwen Salaun, Francesco Bongiovanni
+				and Noel De Palma</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >Short</p>
+			</td>
+			<td >
+				<p >SAT Based Verification of Network Data Planes</p>
+				<p ><em>Shuyuan Zhang and Sharad Malik</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >A Theory for Control-Flow Graph Exploration</p>
+				<p ><em>Stephan Arlt, Philipp Rümmer and Martin Schäf</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >12:10 - 13:30</p>
+			</td>
+			<td >
+				<p ><b>Lunch Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td >
+				<p >13:30 - 15:30</p>
+			</td>
+			<td >
+				<p ><b>Tools and Techniques for Software Engineerting</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Regular</p>
+			</td>
+			<td >
+				<p >Compact Symbolic Execution</p>
+				<p ><em>Jiri Slaby, Jan Strejcek and Marek Trtík</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Multi-threaded Explicit State Space Exploration
+				with State Reconstruction</p>
+				<p ><em>Sami Evangelista, Lars Kristensen and Laure
+				Petrucci</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Tool</p>
+			</td>
+			<td >
+				<p >CELL: A Compositional Verification Framework</p>
+				<p ><em>Kun Ji, Yang Liu, Shang-Wei Lin, Jun Sun, Jin
+				Song Dong and Truong Khanh Nguyen</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >VCS: A Verifier for Component-Based Systems</p>
+				<p ><em>Fei He, Liangze Yin, Bow-Yaw Wang, Lianyi
+				Zhang, Guanyu Mu and Wenrui Meng</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >SmacC: A Retargetable Symbolic Execution Engine</p>
+				<p ><em>Armin Biere1, Jens Knoop, Laura Kovács, and
+				Jakob Zwirchmayr</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >15:30 - 16:00</p>
+			</td>
+			<td >
+				<p ><b>Coffee Break</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >16:00 - 18:00</p>
+			</td>
+			<td >
+				<p ><b>Program Analysis</b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >Regular</p>
+			</td>
+			<td >
+				<p >Verification of Heap Manipulating Programs with
+				Ordered Data by Extended Forest Automata</p>
+				<p ><em>Parosh Abdulla, Lukas Holik, Bengt Jonsson,
+				Ondrej Lengal, Cong Quy Trinh and Tomas Vojnar</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Integrating Policy Iterations in Abstract
+				Interpreters</p>
+				<p ><em>Pierre Roux and Pierre-Loïc Garoche</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Interpolation Properties and SAT-based Model
+				Checking</p>
+				<p ><em>Arie Gurfinkel, Simone Fulvio Rollini, and
+				Natasha Sharygina</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Short</p>
+			</td>
+			<td >
+				<p >The Quest for Precision: A Layered Approach for
+				Data Race Detection in Static Analysis</p>
+				<p ><em>Jakob Mund, Ralf Huuck, Ansgar Fehnker and
+				Cyrille Artho</em></p>
+			</td>
+		</tr>
+    </tbody>
+	</table>
+
+<br>
+
+	<table class="table table-condensed table-bordered">
+        <thead>
+        </thead>
+        <tbody>
+		<tr class="table-header">
+			<td colspan="2"  >
+				<p><h3>Day 4: Friday, 18
+				October, 2013, Formal Devices</h3></p>
+
+				<p class="pull-right"><b>Venue: <a href="http://goo.gl/maps/8mZrw">Nguy Nhu Kontum Hall, VNU, 19 Le Thanh
+				Tong, Hanoi</a></b></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >8:30 - 9:30</p>
+			</td>
+			<td >
+				<p ><b>Keynote: SMT-based Software Model Checking</b></p>
+				<p ><em>Alessandro Cimatti</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >9:30 - 10:00</p>
+			</td>
+			<td >
+				<p ><b>Coffee Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td >
+				<p >10:00 - 12:10</p>
+			</td>
+			<td >
+				<p ><b>Concurrent Programs</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Regular</p>
+			</td>
+			<td >
+				<p >Analysis of Message Passing Programs using
+				SMT-Solvers</p>
+				<p ><em>Parosh Aziz Abdulla, Mohamed Faouzi Atig and
+				Jonathan Cederberg</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >An Expressive Framework for Verifying Deadlock
+				Freedom</p>
+				<p ><em>Duy-Khanh Le, Wei-Ngan Chin and Yong-Meng Teo</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Expected Termination Time in BPA Games</p>
+				<p ><em>Dominik Wojtczak</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >Tool</p>
+			</td>
+			<td >
+				<p >MoTraS: A Tool for Modal Transition Systems and
+				Their Extensions</p>
+				<p ><em>Jan Kretínský and Salomon Sickert</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Cunf: a Tool for Unfolding and Verifying Petri Nets
+				with Read Arcs</p>
+				<p ><em>Cesar Rodriguez and Stefan Schwoon</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p >12:20 - 13:30</p>
+			</td>
+			<td >
+				<p ><b>Lunch Break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td >
+				<p >13:30 - 15:30</p>
+			</td>
+			<td >
+				<p ><b>Time/Cost Analysis</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Regular</p>
+			</td>
+			<td >
+				<p >Precise Cost Analysis via Local Reasoning</p>
+				<p ><em>Diego Esteban Alonso-Blas, Puri Arenas and
+				Samir Genaim</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Control Flow Refinement and Symbolic Computation of
+				Average Case Bound</p>
+				<p ><em>Hong Yi Chen, Supratik Mukhopadhyay and Zheng
+				Lu</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Termination and Cost Analysis of Loops with
+				Concurrent Interleavings</p>
+				<p ><em>Elvira Albert, Antonio Flores-Montoya, Samir
+				Genaim and Enrique Martin-Martin</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Linear Ranking for Linear Lasso Programs</p>
+				<p ><em>Matthias Heizmann, Jochen Hoenicke, Jan Leike
+				and Andreas Podelski</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >15:30 - 16:00</p>
+			</td>
+			<td >
+				<p ><b>Coffee break</b></p>
+			</td>
+		</tr>
+		<tr bgcolor="#99ccff">
+			<td >
+				<p >16:00 - 18:00</p>
+			</td>
+			<td >
+				<p ><b>Parameterized System and Formal Languages</b></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p >Regular</p>
+			</td>
+			<td >
+				<p >Merge and Conquer: State Merging in Parametric
+				Timed Automata</p>
+				<p ><em>Étienne André, Laurent Fribourg and Romain
+				Soulat</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >An Automata-Theoretic Approach for Reasoning About
+				Parameterized Systems and Specifications</p>
+				<p ><em>Sarai Sheinvald, Orna Grumberg and Orna
+				Kupferman</em></p>
+			</td>
+		</tr>
+		<tr class="row1">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Pushdown Systems with Stack Manipulation</p>
+				<p ><em>Yuya Uezato and Yasuhiko Minamide</em></p>
+			</td>
+		</tr>
+		<tr class="row2">
+			<td >
+				<p > </p>
+			</td>
+			<td >
+				<p >Robustness Analysis of String Transducers</p>
+				<p ><em>Roopsha Samanta, Jyotirmoy Deshmukh and Swarat
+				Chaudhuri</em></p>
+			</td>
+		</tr>
+    </tbody>
+	</table>
+</div>
+
+
+
+<h2 id="accepted">Accepted Papers <a href="#" class="pull-right"><i class="icon-home"></i></a></h2>
+<table class="table table-condensed">
+<tbody>
+<tr>
+    <td>
+        <p>
+            <span>Stephan Arlt, Philipp Rümmer and Martin Schäf</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>A Theory for Control-Flow Graph Exploration</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.fi.muni.cz/~xbabiak">Tomáš Babiak</a>, František Blahoudek,
+                <a href="http://www.fi.muni.cz/usr/kretinsky/">Mojmir Kretinsky</a> and
+                <a href="http://www.fi.muni.cz/~xstrejc">Jan Strejcek</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Effective Translation of LTL to Deterministic Rabin Automata: Beyond the (F,G)-Fragment</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Kun Ji, Yang Liu, Shang-Wei Lin, Jun Sun, Jin Song Dong and Truong Khanh Nguyen</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>CELL: A Compositional Verification Framework</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www-lipn.univ-paris13.fr/~evangelista/">Sami Evangelista</a>,
+                <a href="http://home.hib.no/ansatte/lmkr/">Lars Kristensen</a> and
+                <a href="http://www-lipn.univ-paris13.fr/~petrucci/">Laure Petrucci</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Multi-threaded Explicit State Space Exploration with State Reconstruction</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://math.umons.ac.be/maef/fr/tbrihaye.html">Thomas Brihaye</a>,
+                <a href="http://www.lsv.ens-cachan.fr/~doyen/">Laurent Doyen</a>,
+                <a href="http://www.ulb.ac.be/di/ssd/ggeeraer">Gilles Geeraerts</a>,
+                <a href="http://www.cs.ox.ac.uk/people/Joel.Ouaknine/home.html">Joel Ouaknine</a>,
+                <a href="http://www.ulb.ac.be/di/ssd/jfr">Jean-Francois Raskin</a> and James Worrell</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Time-Bounded Reachability for Monotonic Hybrid Automata: Complexity and Fixed Points</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.comp.nus.edu.sg/~leduykha">Duy-Khanh Le</a>,
+                <a href="http://www.comp.nus.edu.sg/~chinwn">Wei-Ngan Chin</a> and
+                <a href="http://www.comp.nus.edu.sg/~teoym/">Yong-Meng Teo</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>An Expressive Framework for Verifying Deadlock Freedom</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Ralf Huuck,
+                <a href="http://staff.aist.go.jp/c.artho/">Cyrille Valentin
+                    Artho</a>, Ansgar Fehnker and Jakob Mund</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>The Quest for Precision: A Layered Approach for Data Race Detection in Static Analysis</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Pierre Roux and
+                <a href="http://www.onera.fr/staff/pierre-loic-garoche/">Pierre-Loic Garoche</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Integrating Policy Iterations in Abstract Interpreters</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Rim Abid, Gwen Salaun, Francesco Bongiovanni and Noel De Palma</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Verification of a Dynamic Management Protocol for Cloud Applications</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://pub.ist.ac.at/~kchatterjee/">Krishnendu Chatterjee</a>,
+                <a href="http://www.lsv.ens-cachan.fr/~doyen/">Laurent Doyen</a>,
+                <a href="http://w3.umons.ac.be/staff/Randour.Mickael/">Mickael Randour</a> and
+                <a href="http://www.ulb.ac.be/di/ssd/jfr">Jean-Francois Raskin</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Looking at Mean-Payoff and Total-Payoff through Windows</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.montefiore.ulg.ac.be/~legay">Axel Legay</a> and
+                <a href="http://people.rennes.inria.fr/Louis-Marie.Traonouez/">Louis-Marie Traonouez</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>PyEcdar: towards open source implementation for timed systems</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Elie Fares, Jean-Paul Bodeveix and Mamoun Filali-Amine</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>An Automatic Technique for Checking the Simulation of Timed Systems</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Michael Luttenberger and Philipp Hoffmann</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Solving Parity Games on the GPU</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://fmv.jku.at/biere/index.html">Armin Biere</a>,
+                <a href="http://www.complang.tuwien.ac.at/knoop">Jens Knoop</a>,
+                <a href="http://www.complang.tuwien.ac.at/lkovacs/">Laura Kovacs</a> and
+                <a href="http://www.complang.tuwien.ac.at/jakob/">Jakob Zwirchmayr</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>SmacC: A Retargetable Symbolic Execution Engine</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Fei He, Liangze Yin,
+                <a href="http://www.iis.sinica.edu.tw/~bywang">Bow-Yaw Wang</a>, Lianyi Zhang, Guanyu Mu and Wenrui Meng</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>VCS: A Verifier for Component-Based Systems</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Jan Kretinsky and Salomon Sickert</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>MoTraS: A Tool for Modal Transition Systems and Their Extensions</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                  <a href="http://www.lrde.epita.fr/~adl">Alexandre Duret-Lutz</a>
+                </span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Manipulating LTL formulas using Spot 1</span>
+            <span lang="EN-US">.</span>
+            <span>0</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Shuyuan Zhang and
+                <a href="http://www.princeton.edu/~sharad">Sharad Malik</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>SAT Based Verification of Network Data Planes</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Zoltan Esik,
+                <a href="http://www.irisa.fr/s4/people/ulrich.fahrenberg/">Uli Fahrenberg</a>,
+                <a href="http://www.montefiore.ulg.ac.be/~legay">Axel Legay</a> and Karin Quaas</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Kleene Algebras and Semimodules for Energy Problems</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.cerc.utexas.edu/~roopsha/">Roopsha Samanta</a>,
+                <a href="http://www.cis.upenn.edu/~djy">Jyotirmoy Deshmukh</a> and
+                <a href="http://www.cs.rice.edu/~swarat">Swarat Chaudhuri</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Robustness Analysis of String Transducers</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Yang Gao, Ernst Moritz Hahn, Naijun Zhan and
+                <a href="http://www2.imm.dtu.dk/~lizh/">Lijun Zhang</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>A CSL Model Checker for Continuous-Time Markov Chains</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Yuya Uezato and Yasuhiko Minamide</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Pushdown Systems with Stack Manipulation</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Elvira Albert, Antonio Flores-Montoya, Samir Genaim and
+                <a href="http://gpd.sip.ucm.es/enrique">Enrique Martin-Martin</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Termination and Cost Analysis of Loops with Concurrent Interleavings</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Aleksandra Jovanovic,
+                <a href="http://www.irccyn.ec-nantes.fr/~lime">Didier Lime</a> and
+                <a href="http://www.irccyn.ec-nantes.fr/~olivier/">Olivier H Roux</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Synthesis of Bounded Integer Parameters for Parametric Timed Reachability Games</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Lukasz Fronc and Alexandre Duret-Lutz</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>LTL Model Checking with Neco</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Jan Kretinsky and Ruslan Ledesma Garza</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Rabinizer 2: Small Deterministic Automata for LTL\GU</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.cs.huji.ac.il/~surke">Sarai Sheinvald</a>,
+                <a href="http://www.cs.technion.ac.il/~orna">Orna Grumberg</a> and
+                <a href="http://www.cs.huji.ac.il/~ornak/">Orna Kupferman</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>An Automata-Theoretic Approach for Reasoning About Parameterized Systems and Specifications</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www-lipn.univ-paris13.fr/~andre/">Étienne André</a>,
+                <a href="http://www.lsv.ens-cachan.fr">Laurent Fribourg</a> and
+                <a href="http://www.lsv.ens-cachan.fr/~soulat/">Romain Soulat</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Merge and Conquer: State Merging in Parametric Timed Automata</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://user.it.uu.se/~parosh/">Parosh Abdulla</a>,
+                <a href="http://www.fit.vutbr.cz/~holik">Lukas Holik</a>,
+                <a href="http://user.it.uu.se/~bengt/">Bengt Jonsson</a>,
+                <a href="http://www.fit.vutbr.cz/~ilengal">Ondrej Lengal</a>,
+                <a href="http://www.it.uu.se/katalog/contr113">Cong Quy Trinh</a> and
+                <a href="http://www.fit.vutbr.cz/~vojnar">Tomas Vojnar</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Verification of Heap Manipulating Programs with Ordered Data by Extended Forest Automata</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://user.it.uu.se/~parosh/">Parosh Aziz Abdulla</a>,
+                <a href="http://user.it.uu.se/~mohat117/">Mohamed Faouzi Atig</a> and Jonathan Cederberg</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Analysis of Message Passing Programs using SMT-Solvers</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.inf.usi.ch/phd/rollini/">Simone Fulvio Rollini</a>,
+                <a href="http://www.sei.cmu.edu/staff/arie">Arie Gurfinkel</a> and
+                <a href="http://www.inf.unisi.ch/faculty/sharygina/">Natasha Sharygina</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Interpolation Properties and SAT-based Model Checking</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.cs.uwaterloo.ca/~s3bendav/">Shoham Ben-David</a> and
+                <a href="http://www.cs.huji.ac.il/~ornak/">Orna Kupferman</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>A Framework for Ranking Vacuity Results</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Diego Esteban Alonso-Blas,
+                <a href="http://clip.dia.fi.upm.es/~puri">Puri Arenas</a> and
+                <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Precise Cost Analysis via Local Reasoning</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.lsv.ens-cachan.fr/~rodriguez/">Cesar Rodriguez</a> and Stefan Schwoon</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Cunf: a Tool for Unfolding and Verifying Petri Nets with Read arcs</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Sigal Weiner,
+                <a href="http://www.cs.huji.ac.il/~ornak/">Orna Kupferman</a>, Matan Hasson, Eyal Pery and Zohar Shevach</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Weighted Safety</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://swt.informatik.uni-freiburg.de/staff/heizmann">Matthias Heizmann</a>,
+                <a href="http://swt.informatik.uni-freiburg.de/staff/hoenicke">Jochen Hoenicke</a>, Jan Leike and
+                <a href="http://www.informatik.uni-freiburg.de/~podelski">Andreas Podelski</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Linear Ranking for Linear Lasso Programs</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                <a href="http://www.cas.mcmaster.ca/~demasira/">Ramiro Demasi</a>,
+                <a href="http://dc.exa.unrc.edu.ar/staff/pcastro/Main.html">Pablo Castro</a>,
+                <a href="http://www.cas.mcmaster.ca/~maibaum/">Tom Maibaum</a> and
+                <a href="http://dc.exa.unrc.edu.ar/staff/naguirre/index.html">Nazareno Aguirre</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Synthesizing Masking Fault-Tolerant Systems From Deontic Specifications</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Supratik Mukhopadhyay, Hong Yi Chen and Zheng Lu</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Control Flow Refinement and Symbolic Computation of Average Case Bound</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Manas Joglekar,
+                <a href="http://www.cse.iitb.ac.in/hrishik">Hrishikesh Karmarkar</a> and
+                <a href="http://www.cse.iitb.ac.in/~supratik">Supratik Chakraborty</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Improved upper and lower bounds for Buechi Disambiguation</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>Jiri Slaby,
+                <a href="http://www.fi.muni.cz/~xstrejc">Jan Strejcek</a> and
+                <a href="http://www.fi.muni.cz/~xtrtik2/">Marek Trtík</a></span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Compact Symbolic Execution</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+            <span>Romain Testylier and Thao Dang</span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>NLTOOLBOX: A library for reachability computation of nonlinear dynamical systems</span>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>
+                <span>
+                  <a href="http://www.csc.liv.ac.uk/~dominik">Dominik Wojtczak</a>
+                </span>
+        </p>
+    </td>
+    <td>
+        <p>
+            <span>Expected termination time in BPA games</span>
+        </p>
+    </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+<hr>
+<footer>
+    <div>
+        <p class="text-center"><a href="#"><i class="icon-home"></i> Top</a></p>
+    </div>
+
+    <!--<small class="pull-right">Last update: June 18, 2013 by hoangta(a)vnu.edu.vn</small>-->
+</footer>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5180820-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+</html>
