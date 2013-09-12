@@ -82,12 +82,12 @@ KEYNOTE TALKS aND TUTORIALS
 Keynote talks and tutorials will be given by:
 
    - Alessandro Cimatti (ITC-IRST, Italy)
-   - Marta Kiwakowska (Oxford, UK)
+   - Marta Kwiatkowska (Oxford, UK)
    - Jerome Leroux (Bordeaux, France)
 
 IMPORTANT DATES
 
-   - April 06, 2013: Paper submission deadline
+   - April 20, 2013: Paper submission deadline (extended)
    - Jun 1, 2013: Paper acceptance/rejection notification
    - July 5, 2013: Camera-ready copy deadline
    - October 15 - 18, 2013: Main conference & Tutorials
