@@ -86,7 +86,7 @@ h4 {
 }
 
 .row2{
-    background-color: #daf5f3;
+    background-color: #f6f6f6;
 }
 
 #programme-div p {
@@ -95,6 +95,10 @@ h4 {
 
 #programme-div p em{
     color: green;
+}
+
+.icon-food{
+    color: #808080;
 }
 
 .icon-star{
