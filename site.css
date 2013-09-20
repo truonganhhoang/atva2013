@@ -86,7 +86,11 @@ h4 {
 }
 
 .row2{
+<<<<<<< HEAD
     background-color: #daf5f3;
+=======
+    background-color: #f6f6f6;
+>>>>>>> origin/master
 }
 
 #programme-div p {
@@ -97,6 +101,13 @@ h4 {
     color: green;
 }
 
+<<<<<<< HEAD
+=======
+.icon-food{
+    color: #808080;
+}
+
+>>>>>>> origin/master
 .icon-star{
     color: #dd1144;
 }
