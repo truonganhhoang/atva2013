@@ -1,0 +1,151 @@
+ATVA 2013
+11th International Symposium on Automated Technology for
+Verification and Analysis
+
+October 15 - 18, 2013, Hanoi, Vietnam
+http://www.uet.vnu.edu.vn/atva2013/
+============================
+
+CALL FOR WORKSHOP PROPOSALS
+
+The purpose of ATVA is to promote research on theoretical and
+practical aspects of automated analysis, verification and synthesis by
+providing a forum for interaction between the regional and the
+international research communities and industry in the field. The
+previous events were held in Taiwan - 2003-5, Beijing - 2006, Tokyo -
+2007, Seoul - 2008, Macao - 2009, Singapore - 2010, Taiwan - 2011, and
+Thiruvananthapuram - 2012.
+
+Topics of interest yo ATVA 2013 include, but are not limited
+to:
+
+- Formalisms for modeling hardware, software and embedded systems
+- Specification and verification of finite-state, infinite-state and
+  parameterized system
+- Program analysis and software verification
+- Analysis and verification of hardware circuits, systems-on-chip and
+  embedded systems
+- Analysis of real-time, hybrid, priced/weighted and probabilistic
+  systems Deductive, algorithmic, compositional, and
+  abstraction/refinement techniques for analysis and verification
+- Analytical techniques for safety, security, and dependability
+- Testing and runtime analysis based on verification technology
+- Analysis and verification of parallel and concurrent
+  hardware/software systems
+- Verification in industrial practice Applications and case studies
+
+
+ATVA 2013  invites  submissions  for  workshop  proposals on
+topics of interest to the ATVA series. The workshops will be
+either half day or one full day. Depending on  the  number of
+accepted workshops, the workshops will be scheduled either on
+October 14, or  October 19, 2013.
+
+All proposals should be sent by e-mail to the workshop
+chair, Quan Thanh Tho, Ho Chi Minh City University of Technology,
+e-mail: qttho@cse.hcmut.edu.vn.
+
+DEADLINES FOR WORKSHOP PROPOSALS:
+
+April 20, 2013: Submission of workshop proposals
+May 6, 2013:   Notification of acceptance
+
+
+CONFERENCE VENUE
+
+Historical Campus,
+Vietnam National University,
+19 Le Thanh Tong st., Hoan Kiem dist.,
+Hanoi, Vietnam
+
+WORKSHOP VENUE
+
+University Campus,
+Vietnam National University,
+141 Xuan Thuy st, Cau Giay dist.,
+Hanoi, Vietnam
+
+ORGANIZING COMMITTEES
+
+GENERAL CHAIR
+
+Nguyen Ngoc Binh (UET-VNU Hanoi, Vietnam)
+
+STEERING COMMITTEE
+
+E. Allen Emerson (U. of Texas-Austin, USA)
+Teruo Higashino (Osaka Univeristy, Japan)
+Insup Lee (U. of Pennsylvania, USA)
+Doron Peled (Bar Ilan University, Israel)
+Farn Wang (National Taiwan University)
+Hsu-Chun Yen (National Taiwan University, Taiwan)
+
+PROGRAMME COMMITTEE CO-CHAIRS
+
+Hung Dang-Van (UET-VNU Hanoi, Vietnam)
+Mizuhito Ogawa (JAIST, Japan)
+
+PUBLICITY CHAIR
+
+Thao Dang (Verimag, France)
+
+TUTORIAL CHAIR
+
+Pham Ngoc-Hung (UET-VNU Hanoi, Vietnam)
+
+FINANCE/REGISTRATION AND WORKSHOP CHAIR
+
+Thanh-Tho Quan (HCMUT, Vietnam)
+
+LOCAL CHAIR
+
+Hoang Truong (UET-VNU Hanoi, Vietnam)
+
+PROGRAMME COMMITTEE
+
+Christel Baier (Germany)
+Jonathan Billington (Australia)
+Gianpiero Cabodi (Italy)
+Supratik Chakraborty (India)
+Wei-Ngan Chin (Singapore)
+Thao Dang (France)
+Hung Dang-Van (Vietnam, Co-chair)
+Deepak D'Souza (India)
+E.Allen Emerson (USA)
+Martin Fränzle (Germany)
+Masahiro Fujita (Japan)
+Susanne Graf (France)
+Teruo Higashino (Japan)
+Alan Hu (Canada)
+Franjo Ivancic (USA)
+Jie-Hong Roland Jiang (Taiwan)
+Joost-Pieter Katoen (Germany)
+Zurab Khasidashvili (Israel)
+Moonzoo Kim (Korea)
+Gerwin Klein (Australia)
+Fribourg Laurent (France)
+Insup Lee (USA)
+Xuandong Li (China)
+Annabelle McIver (Australia)
+Madhavan Mukund (India)
+Pham Ngoc-Hung (Vietnam)
+Thanh-Binh Nguyen (Vietnam)
+Viet-Ha Nguyen (Vietnam)
+Mizuhito Ogawa (Japan, Co-chair)
+Doron Peled (Israel)
+Thanh-Tho Quan (Vietnam)
+Venkatesh R (India)
+Ganesan Ramalingam (India)
+Abhik Roychoudhury (Singapore)
+Hiroyuki Seki (Japan)
+Martin Steffen (Norway)
+Sofiene Tahar (Canada)
+Hoang Truong (Vietnam)
+Mahesh Viswanathan (USA)
+Farn Wang (Taiwan)
+Bow-Yaw Wang (Taiwan)
+Ji Wang (China)
+Hsu-Chun Yen (Taiwan)
+Wang Yi (Sweden)
+Shoji Yuen (Japan)
+Wenhui Zhang (China)
