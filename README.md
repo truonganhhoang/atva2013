@@ -1,7 +1,9 @@
-ATVA 2013 Website
-11th International Symposium on Automated Technology for Verification and Analysis
-October 15 - 18, 2013, Hanoi, Vietnam
+ATVA 2013 
 ========
+11th International Symposium on Automated Technology for Verification and Analysis
+--------
+October 15 - 18, 2013, Hanoi, Vietnam
+--------
 
 Official homepage: http://uet.vnu.edu.vn/atva2013/
 
